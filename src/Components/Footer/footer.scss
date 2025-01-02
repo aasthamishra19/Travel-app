@@ -1,0 +1,88 @@
+.footer {
+    background-color: var(--blackcolor);
+    color: var(--whitecolor);
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footerContent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+
+        .footerSection {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 2rem;
+
+            .footerTitle {
+                font-size: 2rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+            }
+
+            .footerDescription {
+                font-size: 1rem;
+                line-height: 1.5;
+                margin-bottom: 1.5rem;
+            }
+
+            .footerSubtitle {
+                font-size: 1.25rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+
+            .footerLinks {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    margin-bottom: 0.5rem;
+
+                    a {
+                        color: var(--whitecolor);
+                        font-size: 1rem;
+                        text-decoration: none;
+                        transition: color 0.3s ease;
+
+                        &:hover {
+                            color: var(--cyan);
+                        }
+                    }
+                }
+            }
+
+            .socialIcons {
+                display: flex;
+                gap: 1rem;
+
+                a {
+                    color: var(--whitecolor);
+                    font-size: 1.5rem;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: var(--cyan);
+                    }
+                }
+            }
+        }
+    }
+
+    .footerBottom {
+        text-align: center;
+        padding-top: 2rem;
+        border-top: 1px solid var(--greytext);
+
+        p {
+            font-size: 0.875rem;
+        }
+    }
+}

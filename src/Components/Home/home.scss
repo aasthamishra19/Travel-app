@@ -1,0 +1,128 @@
+.home {
+    background: url('../../img.jpg') no-repeat center center/cover;
+    color: var(--whitecolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+
+    .secContainer {
+        z-index: 1;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        .homeText {
+            h1.title {
+                font-size: 3rem;
+                font-weight: 700;
+                line-height: 1.2;
+                margin-bottom: 1rem;
+                color: var(--whitecolor);
+                text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            }
+
+            button.btn {
+                background-color: var(--cyan);
+                color: var(--whitecolor);
+                padding: 0.75rem 2rem;
+                border: none;
+                border-radius: 2rem;
+                font-size: 1rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: background-color 0.3s ease, color 0.3s ease;
+
+                &:hover {
+                    background-color: var(--cyan), 10%;
+                }
+
+                a {
+                    color: var(--whitecolor);
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .homeCard {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            display: grid;
+            gap: 1.5rem;
+            max-width: 800px;
+            width: 100%;
+
+            .locationDiv, .distDiv, .priceDiv {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+
+                label {
+                    font-size: 0.875rem;
+                    font-weight: 500;
+                    color: var(--whitecolor);
+                }
+
+                input {
+                    padding: 0.75rem;
+                    border: none;
+                    border-radius: 0.5rem;
+                    background: var(--whitecolor);
+                    color: var(--blackcolor);
+                    font-size: 1rem;
+                }
+            }
+
+            button.btn {
+                background-color: var(--cyan);
+                color: var(--whitecolor);
+                padding: 0.75rem 1.5rem;
+                border: none;
+                border-radius: 2rem;
+                font-size: 1rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: background-color 0.3s ease, color 0.3s ease;
+
+                &:hover {
+                    background-color: var(--cyan), 10%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .home {
+            height: auto;
+            padding: 2rem 1rem;
+        }
+
+        .secContainer {
+            gap: 1rem;
+
+            .homeText {
+                h1.title {
+                    font-size: 2.5rem;
+                }
+
+                button.btn {
+                    padding: 0.5rem 1.5rem;
+                    font-size: 0.875rem;
+                }
+            }
+
+            .homeCard {
+                padding: 1.5rem;
+            }
+        }
+    }
+}

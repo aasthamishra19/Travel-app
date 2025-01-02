@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Matemasie&family=Moderustic:wght@300..800&display=swap');
+
+:root {
+  --red: hsl(0, 100%, 50%);
+  --hovercolor: hsl(10, 100%, 50%);
+  --Cyan: hsl(180, 100%, 50%);
+  --primarycolor: hsl(265, 100%, 50%);
+  --inputcolor: hsl(330, 100%, 50%);
+  --textcolor: hsl(0, 0%, 75%);
+  --greytext: hsl(0, 0%, 25%);
+  --whitecolor: hsl(0, 0%, 100%);
+  --blackcolor: hsla(0, 0%, 0%, 1);  
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+    transition: 0.3s ease;
+}
+
+body {
+    background-color: var(--greytext);
+    color: var(--whitecolor);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    padding: 0.7rem 1.9rem;
+    background: var(--primarycolor);
+    border: none;
+    border-radius: 3rem;
+    color: var(--whitecolor);
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        background-color: hsl(265, 100%, 60%);
+        color: var(--whitecolor);
+    }
+}
+
+.section {
+    padding: 4rem 2rem;
+    background: var(--blackcolor);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+}
+
+.secTitle {
+    font-size: 2.5rem;
+    color: var(--whitecolor);
+    margin-bottom: 1.5rem;
+}
+
+.secContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+    place-items: center;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+/* Styling for location, price, and distance */
+.location, .price, .distance {
+    color: var(--blackcolor);  
+}
+
+/* Add specific styles for individual sections if needed */
+.offers .location, .offers .price, .offers .distance {
+    color: var(--blackcolor);
+}
+
+.popular .location, .popular .price, .popular .distance {
+    color: var(--blackcolor);
+}
+
+.about .location, .about .price, .about .distance {
+    color: var(--blackcolor);
+}
+
+.contact .location, .contact .price, .contact .distance {
+    color: var(--blackcolor);
+}
